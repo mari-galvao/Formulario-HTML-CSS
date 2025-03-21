@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--metados-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!--css-->
+    <link rel="stylesheet" type="text/css" href="formulario.css"media="screen">
+<!--titulo da pagina-->
+    <title>Cadastro</title>
+</head>
+<body>
+    <!-- Cabeçalho com título e subtítulo (ambos com css de id "titulo")-->
+     <div>
+        <h1> id="titulo">Cadastro de DEVs</h1>
+        <p> id="subtitulo">COMPLETE SUAS INFORMAÇÕES</p>
+        <br>
+     </div>
+     <!--inicio do formulario-->
+     <form>
+
+        <fieldset class="grupo">
+            <!--campo do nome com legenda "nome" e css de classe "campo-->
+            <div class="campo">
+                <label for="nome"><strong>NOME</strong></label>
+                <input type="text" nome="nome" id="nome" required>
+            </div>
+            <!--CAMPO DO SOBRENOME COM LEGENDA "SOBRENOME" E CSS DE CLASSE "CAMPO" -->
+            <div class="campo">
+                <label for="sobrenomeg>SOBRENOME></label>
+                <input type="text" nome="sobrenome"sobrenome" required>
+            </div>
+        </fieldset>
+        <!--CAMPO DO EMAIL COM-->
+        <div class="campo">
+            <label for="email"><strong>EMAIL</strong></label>
+                <input type="email" nome="email" id="email" required>
+        </div>
+        <!--CAMPO DE DESENVOLVIMENTO WEB COM 3 OPÇOES DE BOTOES SELECIONAVEIS (RADIO BUTTON) E CSS DE CLASSE "CAMPO"-->
+        <div class="campo">
+            <label><strong> DE QUAL LADO DA APLICAÇÃO VOCÊ DESENVOLVE?</strong></label>
+            <label>
+                <input type="radio" name="devweb" value="frontend"checked>Front-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="backend">Back-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="fullstack">Fullstack
+            </label>
+        </div>
+        <!--CAMPO DE SENIORIDADE COM 3 OPÇOES PARA ESCOLHA (SELECT OPTION) E CSS DE CLASSE "CAMPO"-->
+        <div class="campo">
+            <label for="senioridade"><strong>SENIORIDADE</strong></label>   
+            <select id="senioridade" required>
+                <option selected disabled value="">SELECIONE</option>
+                <option>JÚNIOR</option>
+                <option>PLENO</option>
+                <option>SÊNIOR</option>
+            </select>
+        </div>
+        <fieldset class="grupo">
+            <!--CAMPO DE TECNOLOGIAS PARA ESCOLHA DE 1 OU MAIS OPÇOES PARA MARCAR (CHECKBOX) E CSS DE CLASSE "CAMPO"-->
+        </fieldset>
+
+     </form>
+</body>
+</html>
